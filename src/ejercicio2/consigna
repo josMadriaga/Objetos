@@ -1,0 +1,13 @@
+Realizar el diagrama de clases y la implementación de las clases.
+Utilizar abstract cuando sea necesario.
+a) Realizar el diagrama de clases y la implementación de las clases:
+• Perro
+• Cocker
+• Caniche
+Con las operaciones :
+• String ladrar()
+• Int cantidadPatas()
+b) Agregar los métodos necesarios para modelar el predicado “Perro que ladra no muerde”.
+• Se sabe que el cocker no ladra.
+• Se sabe que el caniche ladra.
+c) El método ladrar debe informar la situación del perro. 
