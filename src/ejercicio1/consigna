@@ -1,0 +1,17 @@
+Realizar el diagrama de clases, incluir las relaciones existentes e implementar la siguiente situación.
+a) Una computadora consta de una marca, un modelo y un año de fabricación. Para distinguir entre las
+computadoras, se les ha asignado un tipo: Tipo D para desktop, tipo A para All-in-one y tipo L para
+Laptop.
+b) Cada computadora posee 3 características básicas, independiente de su tipo. Todas poseen un disco
+rígido, un procesador y memoria. El disco rígido se caracteriza por su marca, su capacidad en
+gigabytes, y su velocidad de operación en RPM1
+. Por su lado, los procesadores tienen marca, modelo
+y velocidad en gigahertz. De la memoria interesa solo su capacidad en Gigabytes.
+- Cada computadora debe tener la posibilidad de mostrar los valores suyos y de sus componentes,
+por ejemplo, si quiero imprimir los valores de una computadora, puedo imprimir: "Toshiba G480
+-- Procesador: AMD -- Disco: 500gb -- Ram:4gb".
+c) Probar las clases generadas creando un código cliente de éstas. Se espera que escriban una clase
+main, donde se crean computadoras y se muestra su información.
+d) Agregarle a la computadora el comportamiento de encendido y apagado. La computadora debe
+permitir encenderla y apagarla, así como también consultar su estado actual. Recordar que, al
+encender una computadora, también se encienden su disco rígido y su procesador.
