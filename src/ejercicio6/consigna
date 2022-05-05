@@ -1,0 +1,73 @@
+Considere las clases:
+Tupla: Que representa un vector de dos elementos
+Coordenada: Que representa una coordenada cartesiana.
+Pixel: Que agrega un color a la coordenada.
+public class Tupla<E1,E2> {
+private E1 e1;
+private E2 e2;
+public Tupla(E1 e1, E2 e2){
+this.e1= e1;
+this.e2 = e2;
+}
+public E1 getE1() { return e1; }
+public void setE1(E1 e1) { this.e1 = e1; }
+public E2 getE2() { return e2; }
+public void setE2(E2 e2) { this.e2 = e2; }
+public void sumar(Tupla t){
+//Implementacion de: setE1(getE1 + t.getE1)
+if (t.getE1() instanceof String && getE1() instanceof String){
+setE1((E1)(getE1().toString()+ t.getE1().toString()));
+}
+if (t.getE2() instanceof String && getE2() instanceof String){
+setE2((E2)(getE2().toString()+ t.getE2().toString()));
+}
+}
+}
+public class Coordenada extends Tupla{
+public Coordenada(Integer x, Integer y){
+super(x,y);
+}
+@Override
+public void sumar(Tupla t){
+super.setE1((Integer)super.getE1() + (Integer)t.getE1());
+super.setE2((Integer)super.getE2() + (Integer)t.getE2());
+}
+}
+
+public class Pixel extends Coordenada{
+private int color;
+public Pixel(Integer x, Integer y, Integer color){
+super(x,y);
+this.color = color;
+}
+@Override
+public void sumar(Tupla t){
+super.setE1((Integer)super.getE1() + (Integer)t.getE1());
+super.setE2((Integer)super.getE2() + (Integer)t.getE2());
+}
+}
+public class Test {
+public static void main(String[] args) {
+Tupla<String,String> t1 = new Tupla<String,String>("a","b");
+Tupla<String,String> t2 = new Tupla<String,String>("c","d");
+Coordenada c1 = new Coordenada(1,2);
+Coordenada c2 = new Coordenada(1,2);
+t1.sumar(t2);
+c1.sumar(c2);
+Tupla<Integer,Integer> t3 = new Pixel(1,2,3);
+Tupla<Integer,Integer>t4 = new Pixel(1,2,3);
+t3.sumar(t3);
+t3.sumar(c2);
+System.out.println((String)t1.getE1());
+System.out.println(c1.getE1());
+}
+}
+a) ¿Qué versión de sumar se ejecutará en cada caso?
+b) Implementar un toString eficiente (que reutilice código) en cada clase
+c) Que sucede si declaro
+Pixel x = new Tupla<Integer,Integer>
+¿Porque?
+d) Implementar la suma de Pixel.
+e) Implementar la comparación de tuplas “coordenada a coordenada”.
+Realizar las modificaciones necesarias en Tupla, de manera que sus coordenadas sean
+comparables, para poder realizarel punto e).

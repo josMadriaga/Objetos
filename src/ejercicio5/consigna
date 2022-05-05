@@ -1,0 +1,16 @@
+En una empresa hay empleados, con distintos regímenes. Empleados comunes que tienen un sueldo
+básico y sobre este se aplica un descuento de 11% por aporte jubilatorio. Hay vendedores que
+también son empleados, que sobre el sueldo básico cobran una comisión sobre las ventas realizadas,
+cada mes se registra importe vendido para poder calcular cuánto se les debe abonar en concepto de
+comisión, también se aplica el descuento de 11%. En ambos casos se tienen los datos básicos,
+nombre, apellido, DNI, teléfono. Por último también hay empleados contratados, estos no poseen
+sueldo básico, se les paga un valor hora y se registra cuantas horas trabajan mensualmente, también
+se poseen los datos de estos empleados, en este caso no se realizan descuentos jubilatorios.
+a) Modelar las clases necesarias e implementar. ¿Qué conceptos se aplicaron?
+b) La empresa registra todos sus empleados y necesita imprimir los sueldos de éstos. (Para simular
+la impresión de sueldos, mostrar la información por pantalla). Modificar el diagrama de clases y
+la implementación. ¿Qué conceptos se estarían aplicando?
+c) Todos los empleados tienen una cuenta bancaria, entonces además de ser empleados también
+son clientes de banco y por esto saben extraer dinero. Para extraer dinero de su cuenta se debe
+indicar el importe, y automáticamente se debitará de su cuenta. Las cuentas de banco solo
+tienen un número y el saldo.

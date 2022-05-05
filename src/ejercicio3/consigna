@@ -1,0 +1,15 @@
+En los constructores se puede utilizar super cuando sea necesario.
+a) Realizar el diagrama de clases y la implementación de las clases:
+- Vehículo
+- Vehículo CuatroRuedas
+- Vehículo NRuedas
+- Automovil
+- JetSky//MotoNieve
+- Barco
+- Triciclo
+Con las operaciones:
+- Int cantidadRuedas()
+- String nombre()
+b) Agregar los métodos necesarios para modelar:
+• La posición de cada vehículo en el mapa
+• Y la posibilidad de moverlos.
